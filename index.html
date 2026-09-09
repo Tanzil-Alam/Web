@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Tanzil Alam Seyam — Hardware Developer, Maker & AI Engineer. Founder of Xiam. Building robotics, embedded systems, and creative technology solutions." />
+    <title>Tanzil Alam Seyam — Developer Portfolio</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+
+        html,
+        body {
+            width: 100%;
+            background: #000;
+            color: #fff;
+            scroll-behavior: smooth;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2.5rem 5rem;
+            z-index: 100;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.9) 0%, transparent 100%);
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .logo-icon {
+            width: 28px;
+            height: 28px;
+        }
+
+        .logo-text {
+            font-size: 1.25rem;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            gap: 2.5rem;
+            list-style: none;
+        }
+
+        .nav-menu a {
+            color: rgba(255, 255, 255, 0.85);
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 400;
+            transition: color 0.2s ease;
+        }
+
+        .nav-menu a:hover {
+            color: #fff;
+        }
+
+        .hero-section {
+            min-height: 100vh;
+            background: #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 8rem 5rem 4rem;
+        }
+
+        .hero-text {
+            max-width: 750px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .hero-text h1 {
+            font-size: 3.75rem;
+            font-weight: 700;
+            line-height: 1.1;
+            letter-spacing: -0.02em;
+            margin-bottom: 0.25rem;
+        }
+
+        .hero-text h2 {
+            font-size: 2rem;
+            font-weight: 600;
+            color: rgba(255, 255, 255, 0.85);
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-text p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: rgba(255, 255, 255, 0.65);
+            margin-bottom: 2.5rem;
+        }
+
+        .btn-action {
+            display: inline-block;
+            border: 1.5px solid rgba(255, 255, 255, 0.85);
+            padding: 0.75rem 2.25rem;
+            border-radius: 8px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 500;
+            transition: background-color 0.2s ease, transform 0.1s ease;
+        }
+
+        .btn-action:hover {
+            background-color: rgba(255, 255, 255, 0.15);
+            transform: translateY(-2px);
+        }
+
+        .about-section {
+            min-height: 100vh;
+            background: #fff;
+            color: #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 6rem 5rem;
+        }
+
+        .about-content {
+            max-width: 850px;
+        }
+
+        .about-content h2 {
+            font-size: 2.75rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            color: #000;
+        }
+
+        .about-content p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: rgba(0, 0, 0, 0.75);
+            margin-bottom: 1rem;
+        }
+
+        .about-content strong {
+            color: #000;
+            font-weight: 700;
+        }
+
+        .projects-section {
+            min-height: 100vh;
+            background: #121316;
+            color: #fff;
+            padding: 6rem 5rem;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .projects-main-title {
+            text-align: center;
+            font-size: 3.25rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            letter-spacing: -0.02em;
+        }
+
+        .yellow-underline {
+            width: 180px;
+            height: 4px;
+            background: #ccff00;
+            margin: 0 auto 3.5rem;
+            border-radius: 2px;
+        }
+
+        .projects-text-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            max-width: 1250px;
+            margin: 0 auto 3.5rem;
+            width: 100%;
+        }
+
+        .project-text-card {
+            background: #1a1d24;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 12px;
+            padding: 2.25rem 2rem;
+            transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+        }
+
+        .project-text-card:hover {
+            transform: translateY(-4px);
+            border-color: #ccff00;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+        }
+
+        .project-card-title {
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 1.5rem;
+            line-height: 1.3;
+        }
+
+        .project-bullet-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 1.15rem;
+            flex-grow: 1;
+        }
+
+        .project-bullet-item {
+            font-size: 0.95rem;
+            line-height: 1.65;
+            color: rgba(255, 255, 255, 0.72);
+            position: relative;
+            padding-left: 1.25rem;
+        }
+
+        .project-bullet-item::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: #ccff00;
+            font-size: 1.1rem;
+            line-height: 1.5;
+        }
+
+        .project-bullet-item strong {
+            color: #fff;
+            font-weight: 600;
+        }
+
+        .projects-github-cta {
+            max-width: 750px;
+            margin: 0 auto;
+            text-align: center;
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 16px;
+            padding: 3rem 2.5rem;
+        }
+
+        .projects-github-cta h3 {
+            font-size: 1.75rem;
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+            color: #fff;
+        }
+
+        .projects-github-cta p {
+            font-size: 1.05rem;
+            color: rgba(255, 255, 255, 0.7);
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+
+        .github-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            background: #ccff00;
+            color: #000;
+            font-weight: 700;
+            font-size: 1.05rem;
+            padding: 0.9rem 2.25rem;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background-color 0.2s ease, transform 0.1s ease, box-shadow 0.2s ease;
+        }
+
+        .github-btn:hover {
+            background: #b8e600;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(204, 255, 0, 0.25);
+        }
+
+        .github-btn svg {
+            width: 22px;
+            height: 22px;
+            fill: currentColor;
+        }
+
+        .contact-section {
+            min-height: 70vh;
+            background: #fff;
+            color: #000;
+            padding: 8rem 5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .contact-container {
+            max-width: 800px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .contact-container h2 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 1.25rem;
+            letter-spacing: -0.02em;
+            color: #000;
+        }
+
+        .contact-container p {
+            color: rgba(0, 0, 0, 0.7);
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 3rem;
+            max-width: 600px;
+            margin: 0 auto 3rem;
+        }
+
+        .contact-card {
+            background: #f4f4f6;
+            border: 1px solid rgba(0, 0, 0, 0.08);
+            border-radius: 16px;
+            padding: 3rem 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            align-items: center;
+        }
+
+        .contact-detail-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .contact-detail-label {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            font-weight: 700;
+            color: rgba(0, 0, 0, 0.45);
+        }
+
+        .contact-email-link {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: #000;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        .contact-email-link:hover {
+            color: #709900;
+        }
+
+        .contact-detail-focus {
+            font-size: 1.05rem;
+            font-weight: 500;
+            color: rgba(0, 0, 0, 0.65);
+        }
+
+        footer.site-footer {
+            background-color: #e5dec9;
+            color: #4a443b;
+            padding: 4rem 5rem 3rem;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .footer-brand {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .footer-brand-text h3 {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: #2c2823;
+        }
+
+        .footer-brand-text p {
+            font-size: 0.85rem;
+            color: #635c52;
+        }
+
+        .footer-support {
+            text-align: center;
+        }
+
+        .footer-support h4 {
+            font-family: Georgia, 'Times New Roman', serif;
+            font-style: italic;
+            font-size: 1.6rem;
+            font-weight: 500;
+            color: #2c2823;
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-support p {
+            font-size: 0.9rem;
+            color: #635c52;
+            line-height: 1.5;
+        }
+
+        .footer-social-col {
+            text-align: right;
+        }
+
+        .footer-social-title {
+            font-family: Georgia, 'Times New Roman', serif;
+            font-style: italic;
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: #2c2823;
+            margin-bottom: 1rem;
+        }
+
+        .social-icons-row {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .social-icon-btn {
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            background: #2c2823;
+            color: #e5dec9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: transform 0.2s ease, background-color 0.2s ease;
+        }
+
+        .social-icon-btn:hover {
+            transform: translateY(-3px);
+            background: #000;
+        }
+
+        .social-icon-btn svg {
+            width: 18px;
+            height: 18px;
+            fill: currentColor;
+        }
+
+        @media (max-width: 1024px) {
+
+            nav,
+            .hero-section,
+            .about-section,
+            .projects-section,
+            .contact-section,
+            footer.site-footer {
+                padding-left: 2rem;
+                padding-right: 2rem;
+            }
+
+            .hero-section,
+            .about-section {
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+            }
+
+            .projects-text-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .projects-github-cta {
+                padding: 2rem 1.5rem;
+            }
+
+            .footer-container {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: 2.5rem;
+            }
+
+            .footer-brand,
+            .social-icons-row,
+            .footer-social-col {
+                justify-content: center;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                padding: 1.5rem 1.25rem;
+            }
+
+            .nav-menu {
+                gap: 1.25rem;
+            }
+
+            .nav-menu a {
+                font-size: 0.95rem;
+            }
+
+            .hero-text h1 {
+                font-size: 2.75rem;
+            }
+
+            .hero-text h2 {
+                font-size: 1.5rem;
+            }
+
+            .contact-email-link {
+                font-size: 1.35rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            nav {
+                padding: 1.25rem 1rem;
+            }
+
+            .nav-menu {
+                gap: 0.85rem;
+            }
+
+            .nav-menu a {
+                font-size: 0.88rem;
+            }
+
+            .logo-container {
+                gap: 0.5rem;
+            }
+
+            .logo-icon {
+                width: 22px;
+                height: 22px;
+            }
+
+            .logo-text {
+                font-size: 1rem;
+            }
+
+            .hero-text h1 {
+                font-size: 2.25rem;
+            }
+
+            .hero-text h2 {
+                font-size: 1.25rem;
+            }
+
+            .contact-email-link {
+                font-size: 1.15rem;
+                word-break: break-all;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo-container">
+            <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                    d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+                </path>
+                <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                <line x1="12" y1="22.08" x2="12" y2="12"></line>
+            </svg>
+            <span class="logo-text">Portfolio</span>
+        </div>
+        <ul class="nav-menu">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills & Works</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero-section">
+        <div class="hero-text">
+            <h1>Tanzil Alam Seyam</h1>
+            <h2>Fullstack Developer</h2>
+            <p>Building custom hardware, embedded robotics systems, and physical micro-controller builds from scratch.
+            </p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn-action">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section" id="about">
+        <div class="about-content">
+            <h2>About Me</h2>
+            <p>
+                I am a hardware developer, maker, and creative programmer focused on building physical devices, robotics, and interactive digital projects. I work across custom electronic circuits, 3D modeling for hardware enclosures, and AI engineering. As the founder of <strong>Xiam</strong>, I lead end-to-end design and engineering across electronic systems, software tools, and community hardware initiatives.
+            </p>
+        </div>
+    </section>
+
+    <section class="projects-section" id="skills">
+        <h2 class="projects-main-title">Skills & Works</h2>
+        <div class="yellow-underline"></div>
+
+        <div class="projects-text-grid">
+            <div class="project-text-card">
+                <h3 class="project-card-title">Hardware Engineering & Embedded Systems</h3>
+                <ul class="project-bullet-list">
+                    <li class="project-bullet-item">
+                        <strong>Microcontroller Development:</strong> Custom circuits with ESP32, ESP8266, and Arduino.
+                    </li>
+                    <li class="project-bullet-item">
+                        <strong>RF & Wireless:</strong> Sub-1GHz and 2.4GHz transceivers (nRF24L01, CC1101) for RF projects.
+                    </li>
+                    <li class="project-bullet-item">
+                        <strong>Display & Interface:</strong> OLED diagnostic tools and signal analyzers with SPI/I2C.
+                    </li>
+                </ul>
+            </div>
+
+            <div class="project-text-card">
+                <h3 class="project-card-title">3D Design & Hardware Prototyping</h3>
+                <ul class="project-bullet-list">
+                    <li class="project-bullet-item">
+                        <strong>Enclosure Design:</strong> Custom 3D-printed cases and mounts for microcontrollers.
+                    </li>
+                    <li class="project-bullet-item">
+                        <strong>3D Modeling:</strong> Mechanical parts, mesh operations, and embossed labeling.
+                    </li>
+                    <li class="project-bullet-item">
+                        <strong>Manufacturing Prep:</strong> FDM print optimization with Bambu Studio.
+                    </li>
+                </ul>
+            </div>
+
+            <div class="project-text-card">
+                <h3 class="project-card-title">Creative Coding & AI Engineering</h3>
+                <ul class="project-bullet-list">
+                    <li class="project-bullet-item">
+                        <strong>AI & Prompt Engineering:</strong> Structured prompts, LLM workflows, and AI-powered automation.
+                    </li>
+                    <li class="project-bullet-item">
+                        <strong>Computer Vision:</strong> Hand-tracking with MediaPipe for gesture-controlled interfaces.
+                    </li>
+                    <li class="project-bullet-item">
+                        <strong>Software & Automation:</strong> Python, C++, JavaScript scripts for dev workflows.
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="projects-github-cta">
+            <h3>Explore All Projects on GitHub</h3>
+            <p>
+                Interested in viewing the complete source code, circuit schematics, commit history, and active
+                repositories? Check out my GitHub profile.
+            </p>
+            <a href="https://github.com/xiamcommunity-max?tab=repositories" target="_blank" class="github-btn">
+                <svg viewBox="0 0 24 24">
+                    <path
+                        d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                </svg>
+                View Repositories on GitHub &rarr;
+            </a>
+        </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+        <div class="contact-container">
+            <h2>Get In Touch</h2>
+            <p>Have a hardware project, custom microcontroller build, or robotics system in mind? Feel free to reach out
+                directly.</p>
+
+            <div class="contact-card">
+                <div class="contact-detail-item">
+                    <span class="contact-detail-label">Email</span>
+                    <a href="mailto:xiamcommunity@gmail.com" class="contact-email-link">xiamcommunity@gmail.com</a>
+                </div>
+                <div class="contact-detail-item">
+                    <span class="contact-detail-label">Focus Area</span>
+                    <div class="contact-detail-focus">Hardware Design, Embedded Systems & Robotics</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="#2c2823" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path
+                        d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+                    </path>
+                    <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                    <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                </svg>
+                <div class="footer-brand-text">
+                    <h3>Tanzil Alam Seyam</h3>
+                    <p>Fullstack Developer & Maker</p>
+                </div>
+            </div>
+
+            <div class="footer-support">
+                <h4>Keep Supporting</h4>
+                <p>Building open-source robotics, hardware diagnostic builds, and micro-controller tools for the maker
+                    community.</p>
+            </div>
+
+            <div class="footer-social-col">
+                <div class="footer-social-title">Follow Me</div>
+                <div class="social-icons-row">
+                    <a href="https://www.facebook.com/people/Xiam-Official/61592262441666/" target="_blank"
+                        class="social-icon-btn" aria-label="Facebook">
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                        </svg>
+                    </a>
+                    <a href="https://www.youtube.com/@Xiam-official" target="_blank" class="social-icon-btn"
+                        aria-label="YouTube">
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                        </svg>
+                    </a>
+                    <a href="https://x.com/Xiam_Official" target="_blank" class="social-icon-btn" aria-label="Twitter">
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/_xiam_official/" target="_blank" class="social-icon-btn"
+                        aria-label="Instagram">
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
