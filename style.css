@@ -1,0 +1,113 @@
+   html,
+   body {
+       margin: 0;
+       padding: 0;
+       width: 100%;
+       height: 100%;
+       overflow-x: hidden;
+   }
+
+   .ABOUT {
+       position: relative;
+       width: 100vw;
+       min-height: 100vh;
+       overflow: hidden;
+       color: white;
+   }
+
+   .ABOUT::before {
+       content: "";
+       position: absolute;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100%;
+
+       background: url('https://img.magnific.com/free-vector/abstract-background-with-pink-purple-flowing-lines-design_1048-20364.jpg?semt=ais_hybrid&w=740&q=80') no-repeat center / cover;
+
+       filter: blur(8px);
+       transform: scale(1.1);
+       z-index: 0;
+   }
+
+   .ABOUT>* {
+       position: relative;
+       z-index: 1;
+       color: white;
+   }
+
+   html,
+   body {
+       margin: 0;
+       padding: 0;
+       width: 100%;
+       height: 100%;
+       overflow-x: hidden;
+   }
+
+   .PROJECTS {
+       position: relative;
+       width: 100vw;
+       min-height: 100vh;
+       overflow: hidden;
+       color: white;
+   }
+
+   .PROJECTS::before {
+       content: "";
+       position: absolute;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100%;
+
+       background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMuw8H9FvaOnTtTeFT3_2c3HG7-b9R-bzulqPPCTJjaeGsGl8glo4QqiM&s=10') no-repeat center / cover;
+
+       filter: blur(8px);
+       transform: scale(1.1);
+       z-index: 0;
+   }
+
+   .PROJECTS>* {
+       position: relative;
+       z-index: 1;
+       color: white;
+   }
+
+   html,
+   body {
+       margin: 0;
+       padding: 0;
+       width: 100%;
+       height: 100%;
+       overflow-x: hidden;
+   }
+
+   .CONTACT {
+       position: relative;
+       width: 100vw;
+       min-height: 100vh;
+       overflow: hidden;
+       color: white;
+   }
+
+   .CONTACT::before {
+       content: "";
+       position: absolute;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100%;
+
+       background: url('https://coolbackgrounds.io/images/compute-ea4c57a4.png') no-repeat center / cover;
+
+       filter: blur(8px);
+       transform: scale(1.1);
+       z-index: 0;
+   }
+
+   .CONTACT>* {
+       position: relative;
+       z-index: 1;
+       color: rgba(255, 255, 255, 0.575);
+   }
