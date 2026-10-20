@@ -8,6 +8,6 @@ Full-Screen Background Image: Uses CSS styling to scale and stretch a web-hosted
 
 Styling & Effects: Features a subtle blur effect on the background image while keeping the white text clear and easy to read.
 
-Live-Preview : https://tanzil-alam.github.io/Web/
+Live-Preview : seyam.me
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/0d4c92c7-3143-4b11-986d-432a118ac039" />
