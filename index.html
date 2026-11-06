@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="description" content="Seyam is a robotics developer in Bangladesh creating robots through 3D design, electronics, and programming.">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="theme-color" content="#090c09">
+      <link rel="icon" href="assets/img/favicon.ico" sizes="any">
+      <link rel="icon" type="image/png" sizes="1024x1024" href="assets/img/favicon.png">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Syne:wght@400..800&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css">
+      <link rel="stylesheet" href="assets/css/styles.css">
+      <title>Seyam — Robotics Developer</title>
+   </head>
+   <body>
+      <header class="header" id="header">
+         <nav class="nav container" aria-label="Main navigation">
+            <a href="#home" class="nav__logo">Seyam</a>
+            <div class="nav__menu" id="nav-menu">
+               <ul class="nav__list">
+                  <li><a href="#home" class="nav__link active-link">Home</a></li>
+                  <li><a href="#work" class="nav__link">My Skills</a></li>
+                  <li><a href="#skills" class="nav__link">Tools</a></li>
+                  <li><a href="#contact" class="nav__contact">Contact me</a></li>
+               </ul>
+               <button class="nav__close" id="nav-close" type="button" aria-label="Close menu"><i class="ri-close-large-line" aria-hidden="true"></i></button>
+            </div>
+            <button class="nav__toggle" id="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false"><i class="ri-menu-line" aria-hidden="true"></i></button>
+         </nav>
+      </header>
+
+      <main class="main">
+         <section class="home section" id="home">
+            <span class="blob-big home__blob" aria-hidden="true"></span>
+            <div class="home__container container">
+               <div class="home__content">
+                  <p class="home__subtitle">Hi! I’m Seyam <span>— Based in Bangladesh</span></p>
+                  <h1 class="home__title">Robotics<br><span id="home-typed">Developer</span></h1>
+                  <p class="home__description">Industrial automation and robotics technology. I design, program, and build robots made to work in the real world.</p>
+                  <div class="home__portrait">
+                     <span class="blob-small home__portrait-blob" aria-hidden="true"></span>
+                     <img src="assets/img/home-img.png" alt="Portfolio portrait">
+                     <a class="home__scroll" href="#about" aria-label="Scroll to about me"><i class="ri-arrow-down-line" aria-hidden="true"></i></a>
+                  </div>
+                  <a class="home__circle" href="#about" aria-label="Explore more about Seyam"><span>EXPLORE · BUILD · CREATE ·</span><i class="ri-arrow-down-line" aria-hidden="true"></i></a>
+               </div>
+            </div>
+         </section>
+
+         <section class="about section" id="about">
+            <div class="about__container container grid">
+               <h2 class="about__title">I’m Seyam, a robotics developer who brings ideas to life through <span>3D design</span>, <span>electronics</span>, and programming.</h2>
+               <div class="about__content">
+                  <p class="about__description">I design in 3D, build electronic systems, write code, and bring all the pieces together to create real robots—machines designed to live and work in the world.</p>
+                  <a class="button" href="#contact">Contact me <i class="ri-arrow-right-up-line" aria-hidden="true"></i></a>
+               </div>
+            </div>
+         </section>
+
+         <section class="work section" id="work">
+            <h2 class="section__title">My <span>Skills</span></h2>
+            <div class="work__container container">
+               <div class="work__track" id="work-track">
+                  <article class="work__card">
+                     <div class="work__image work__image--skill"><img src="assets/img/3D.png" alt="3D model designed in Fusion 360"></div>
+                     <div class="work__details"><span class="work__number">01</span><h3 class="work__name">3D Designing</h3><p class="work__description">Turning ideas into detailed 3D models and designs ready to take shape.</p></div>
+                  </article>
+                  <article class="work__card">
+                     <div class="work__image work__image--skill"><img src="assets/img/simulator.png" alt="Robot arm in simulation software"></div>
+                     <div class="work__details"><span class="work__number">02</span><h3 class="work__name">Simulation</h3><p class="work__description">Exploring designs and testing ideas in a virtual environment before building.</p></div>
+                  </article>
+                  <article class="work__card">
+                     <div class="work__image work__image--skill"><img src="assets/img/editing.png" alt="Video editing timeline on a laptop"></div>
+                     <div class="work__details"><span class="work__number">03</span><h3 class="work__name">Editing</h3><p class="work__description">Creating clear, engaging video edits with CapCut and Alight Motion.</p></div>
+                  </article>
+                  <article class="work__card">
+                     <div class="work__image work__image--skill"><img src="assets/img/programming.png" alt="Code editor on a computer screen"></div>
+                     <div class="work__details"><span class="work__number">04</span><h3 class="work__name">Programming</h3><p class="work__description">Writing code for creative projects, interactive experiences, and robotics.</p></div>
+                  </article>
+                  <article class="work__card">
+                     <div class="work__image work__image--skill"><img src="assets/img/social-media-marketting.png" alt="Digital marketing and social media work"></div>
+                     <div class="work__details"><span class="work__number">05</span><h3 class="work__name">Social Media Marketing</h3><p class="work__description">Making and sharing digital content to help ideas reach the right people.</p></div>
+                  </article>
+               </div>
+               <div class="work__controls" aria-label="Project carousel controls">
+                  <button class="slider-button" id="work-prev" type="button" aria-label="Previous projects"><i class="ri-arrow-left-line" aria-hidden="true"></i></button>
+                  <div class="work__pagination" id="work-pagination" aria-label="Choose a project"></div>
+                  <button class="slider-button" id="work-next" type="button" aria-label="Next projects"><i class="ri-arrow-right-line" aria-hidden="true"></i></button>
+               </div>
+            </div>
+         </section>
+
+         <section class="skills section" id="skills">
+            <h2 class="section__title">Skills &amp; <span>Tools</span></h2>
+            <div class="skills__container container">
+               <div class="skills__grid">
+                  <article class="skills__card">
+                     <h3 class="skills__title">My Tools</h3>
+                     <div class="skills__logos" role="region" aria-label="My tools; scroll horizontally" tabindex="0">
+                        <img src="assets/img/tool-logos/visualstudiocode.svg" alt="Visual Studio Code">
+                        <img src="assets/img/tool-logos/antigravity.png" alt="Google Antigravity IDE">
+                        <img src="assets/img/tool-logos/githubcopilot.svg" alt="GitHub Copilot">
+                        <img src="assets/img/tool-logos/github-mark.svg" alt="GitHub">
+                        <img src="assets/img/tool-logos/python.svg" alt="Python">
+                        <img src="assets/img/tool-logos/html5.svg" alt="HTML">
+                        <img src="assets/img/tool-logos/css3.svg" alt="CSS">
+                        <img src="assets/img/tool-logos/cplusplus.svg" alt="C++">
+                        <img src="assets/img/tool-logos/godotengine.svg" alt="Godot">
+                        <img src="assets/img/tool-logos/arduino.svg" alt="Arduino IDE">
+                        <img src="assets/img/tool-logos/kicad.svg" alt="KiCad">
+                        <img src="assets/img/tool-logos/wokwi.png" alt="Wokwi">
+                        <img src="assets/img/tool-logos/raspberrypi.svg" alt="Raspberry Pi">
+                        <img src="assets/img/tool-logos/bambulab.svg" alt="Bambu Lab">
+                        <img src="assets/img/tool-logos/fusion.svg" alt="Fusion 360">
+                        <img src="assets/img/tool-logos/blender.svg" alt="Blender">
+                        <img src="assets/img/tool-logos/capcut.png" alt="CapCut">
+                        <img src="assets/img/tool-logos/canva.svg" alt="Canva">
+                     </div>
+                  </article>
+               </div>
+            </div>
+         </section>
+
+         <section class="testimonials section" aria-labelledby="testimonials-title">
+            <h2 class="section__title" id="testimonials-title">My <span>Approach</span></h2>
+            <div class="testimonials__viewport container" id="testimonials-viewport">
+               <div class="testimonials__track" id="testimonials-track">
+                  <article class="testimonials__card"><div class="testimonials__rating"><span>01</span><span>ROBOTICS</span></div><p class="testimonials__description">From 3D design and electronics to programming and assembly, I enjoy bringing a robot from an early idea into the real world.</p><div class="testimonials__person"><span>My approach</span></div></article>
+                  <article class="testimonials__card"><div class="testimonials__rating"><span>02</span><span>ELECTRONICS</span></div><p class="testimonials__description">I explore circuits, PCB design, and microcontrollers to create the electronic foundations that make interactive projects work.</p><div class="testimonials__person"><span>What I build</span></div></article>
+                  <article class="testimonials__card"><div class="testimonials__rating"><span>03</span><span>3D DESIGN</span></div><p class="testimonials__description">I use digital design, simulation, and 3D printing to experiment with form, test ideas, and make functional parts.</p><div class="testimonials__person"><span>How I create</span></div></article>
+                  <article class="testimonials__card"><div class="testimonials__rating"><span>04</span><span>PROGRAMMING</span></div><p class="testimonials__description">I use code to connect hardware and software, build interactive experiences, and bring creative ideas to life.</p><div class="testimonials__person"><span>How I think</span></div></article>
+               </div>
+            </div>
+            <div class="testimonials__controls container"><button class="slider-button" id="testimonial-prev" type="button" aria-label="Previous testimonials"><i class="ri-arrow-left-line" aria-hidden="true"></i></button><button class="slider-button" id="testimonial-next" type="button" aria-label="Next testimonials"><i class="ri-arrow-right-line" aria-hidden="true"></i></button></div>
+         </section>
+
+         <section class="contact section" id="contact">
+            <h2 class="section__title">Contact <span>Me</span></h2>
+            <div class="contact__container container grid">
+               <form class="contact__form" id="contact-form">
+                  <label class="contact__field"><span>Name</span><input type="text" name="name" placeholder="Your name" required></label>
+                  <label class="contact__field"><span>Email</span><input type="email" name="email" placeholder="your@email.com" required></label>
+                  <label class="contact__field"><span>Message</span><textarea name="message" rows="4" placeholder="Tell me a little about your project..." required></textarea></label>
+                  <button class="button" type="submit">Send Message <i class="ri-arrow-right-up-line" aria-hidden="true"></i></button>
+                  <p class="contact__message" id="contact-message" aria-live="polite"></p>
+               </form>
+               <div class="contact__info">
+                  <a class="contact__card" href="mailto:xiamcommunity@gmail.com"><span class="contact__icon"><i class="ri-mail-line" aria-hidden="true"></i></span><span><small>Email</small><strong>xiamcommunity@gmail.com</strong></span><i class="ri-arrow-right-up-line contact__external" aria-hidden="true"></i></a>
+                  <a class="contact__card" href="https://www.instagram.com/010_._001/" target="_blank" rel="noreferrer"><span class="contact__icon"><i class="ri-instagram-line" aria-hidden="true"></i></span><span><small>Instagram</small><strong>@010_._001</strong></span><i class="ri-arrow-right-up-line contact__external" aria-hidden="true"></i></a>
+                  <a class="contact__card" href="https://github.com/Tanzil-Alam" target="_blank" rel="noreferrer"><span class="contact__icon"><svg class="github-logo" aria-hidden="true" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.12 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></span><span><small>GitHub</small><strong>Tanzil-Alam</strong></span><i class="ri-arrow-right-up-line contact__external" aria-hidden="true"></i></a>
+                  <div class="contact__card"><span class="contact__icon"><i class="ri-map-pin-line" aria-hidden="true"></i></span><span><small>Location</small><strong>Bangladesh</strong></span></div>
+               </div>
+            </div>
+         </section>
+      </main>
+
+      <footer class="footer">
+         <div class="footer__container container">
+            <p class="footer__title">Let’s build something<br>that brings your idea<br><span>into the real world.</span></p>
+            <div class="footer__bottom">
+               <a class="footer__logo" href="#home">Seyam<span>.</span></a>
+               <nav class="footer__links" aria-label="Footer navigation"><a href="#work">My Skills</a><a href="#skills">Tools</a></nav>
+               <div class="footer__socials"><a href="https://www.instagram.com/010_._001/" aria-label="Instagram"><i class="ri-instagram-line" aria-hidden="true"></i></a><a href="https://github.com/Tanzil-Alam" aria-label="GitHub" target="_blank" rel="noreferrer"><svg class="github-logo" aria-hidden="true" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.12 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a></div>
+               <small class="footer__copy">© <span id="year"></span> Seyam. All rights reserved.</small>
+            </div>
+         </div>
+      </footer>
+      <a class="scroll-up" href="#home" id="scroll-up" aria-label="Scroll to top"><i class="ri-arrow-up-line" aria-hidden="true"></i></a>
+      <script src="assets/js/main.js"></script>
+   </body>
+</html>
