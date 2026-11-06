@@ -1,13 +1,10 @@
-Simple HTML & CSS Webpage.
-I built this webpage using custom HTML and CSS included via a < style > tag in the main document.
+# Project Features
+Fully responsive portfolio website Bianca (Mobile First Methodology).
+Clear and semantic HTML structure.
+Use of CSS variables and modern JavaScript functions.
+Smooth scrolling between sections.
+Scroll animations.
+Compatible with all modern browsers and devices.
 
-Features :
-Pure HTML & CSS: Built entirely from scratch using standard semantic elements (< h1 >, < h2 >, < p >).
-
-Full-Screen Background Image: Uses CSS styling to scale and stretch a web-hosted image to fill the entire screen.
-
-Styling & Effects: Features a subtle blur effect on the background image while keeping the white text clear and easy to read.
-
-Live-Preview : seyam.me
-
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/0d4c92c7-3143-4b11-986d-432a118ac039" />
+Live-Preview : https://seyam.me/
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e8cb6cf7-3029-47d8-a917-742353825f7c" />
