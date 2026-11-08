@@ -70,6 +70,7 @@ h1, h2, h3, h4 { color: var(--white-color); font-family: var(--second-font); fon
 .home__title span { color: var(--first-color); }
 .home__description { max-width: 410px; margin: 1.25rem auto 0; font-size: var(--smaller-font-size); line-height: 1.8; }
 .home__portrait { position: relative; width: clamp(165px, 23vw, 235px); height: clamp(165px, 23vw, 235px); margin: 2rem auto 0; }
+.home__portrait picture { position: relative; display: block; width: 100%; height: 100%; }
 .home__portrait::before { position: absolute; inset: 7% 3% -2% 12%; transform: rotate(7deg); border: 9px solid var(--white-color); border-radius: 1.2rem; background: linear-gradient(140deg, var(--first-color), hsl(var(--hue), 50%, 31%)); content: ""; }
 .home__portrait img { position: relative; width: 100%; height: 100%; object-fit: contain; object-position: center bottom; filter: drop-shadow(0 10px 24px #0008); }
 .home__portrait-blob { top: 20%; left: 10%; z-index: -1; width: 180px; height: 180px; filter: blur(75px); }

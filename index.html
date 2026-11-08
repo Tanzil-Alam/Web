@@ -14,15 +14,20 @@
       <meta property="og:description" content="Explore Seyam's robotics, programming, electronics, and 3D design work.">
       <meta property="og:url" content="https://seyam.me/">
       <meta property="og:image" content="https://seyam.me/assets/img/home-img.png">
-      <meta property="og:image:alt" content="Seyam, robotics developer">
+      <meta property="og:image:alt" content="Futuristic robot illustration for Seyam's robotics portfolio">
+      <meta property="og:image:type" content="image/png">
+      <meta property="og:image:width" content="1000">
+      <meta property="og:image:height" content="1000">
       <meta name="twitter:card" content="summary_large_image">
       <meta name="twitter:title" content="Seyam (Tanzil Alam) | Robotics Developer">
       <meta name="twitter:description" content="Robotics developer from Bangladesh working in programming, electronics, and 3D design.">
       <meta name="twitter:image" content="https://seyam.me/assets/img/home-img.png">
-      <link rel="icon" href="assets/img/favicon.ico" sizes="any">
-      <link rel="icon" type="image/png" sizes="1024x1024" href="assets/img/favicon.png">
+      <meta name="twitter:image:alt" content="Futuristic robot illustration for Seyam's robotics portfolio">
+      <link rel="icon" href="/favicon.ico">
+      <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Syne:wght@400..800&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css">
       <link rel="stylesheet" href="assets/css/styles.css">
@@ -30,41 +35,62 @@
       <script type="application/ld+json">
       {
          "@context": "https://schema.org",
-         "@type": "ProfilePage",
-         "@id": "https://seyam.me/#profile",
-         "url": "https://seyam.me/",
-         "name": "Seyam (Tanzil Alam) | Robotics Developer in Bangladesh",
-         "mainEntity": {
-            "@type": "Person",
-            "@id": "https://seyam.me/#person",
-            "name": "Seyam",
-            "alternateName": [
-               "Siyam",
-               "Siam",
-               "Tanzil Alam",
-               "Tanzil"
-            ],
-            "description": "Robotics developer in Bangladesh working with robotics, industrial automation, electronics, programming, and 3D design.",
-            "url": "https://seyam.me/",
-            "image": "https://seyam.me/assets/img/home-img.png",
-            "jobTitle": "Robotics Developer",
-            "address": {
-               "@type": "PostalAddress",
-               "addressCountry": "BD"
+         "@graph": [
+            {
+               "@type": "WebSite",
+               "@id": "https://seyam.me/#website",
+               "url": "https://seyam.me/",
+               "name": "Seyam",
+               "alternateName": [
+                  "Seyam - Tanzil Alam",
+                  "Tanzil Alam"
+               ],
+               "inLanguage": "en-BD"
             },
-            "knowsAbout": [
-               "Robotics",
-               "Industrial automation",
-               "Programming",
-               "Electronics",
-               "3D design",
-               "3D printing"
-            ],
-            "sameAs": [
-               "https://github.com/Tanzil-Alam",
-               "https://www.instagram.com/010_._001/"
-            ]
-         }
+            {
+               "@type": "ProfilePage",
+               "@id": "https://seyam.me/#profile",
+               "url": "https://seyam.me/",
+               "name": "Seyam (Tanzil Alam) | Robotics Developer in Bangladesh",
+               "inLanguage": "en-BD",
+               "isPartOf": {
+                  "@id": "https://seyam.me/#website"
+               },
+               "mainEntity": {
+                  "@id": "https://seyam.me/#person"
+               }
+            },
+            {
+               "@type": "Person",
+               "@id": "https://seyam.me/#person",
+               "name": "Seyam",
+               "alternateName": [
+                  "Siyam",
+                  "Siam",
+                  "Tanzil Alam",
+                  "Tanzil"
+               ],
+               "description": "Robotics developer in Bangladesh working with robotics, industrial automation, electronics, programming, and 3D design.",
+               "url": "https://seyam.me/",
+               "jobTitle": "Robotics Developer",
+               "address": {
+                  "@type": "PostalAddress",
+                  "addressCountry": "BD"
+               },
+               "knowsAbout": [
+                  "Robotics",
+                  "Industrial automation",
+                  "Programming",
+                  "Electronics",
+                  "3D design",
+                  "3D printing"
+               ],
+               "sameAs": [
+                  "https://github.com/Tanzil-Alam",
+                  "https://www.instagram.com/010_._001/"
+               ]
+            }
+         ]
       }
       </script>
    </head>
@@ -95,7 +121,10 @@
                   <p class="home__description">Seyam, also known as Siyam or Siam, is a robotics developer in Bangladesh. Projects published on GitHub as Tanzil Alam explore robotics, electronics, programming, and 3D design.</p>
                   <div class="home__portrait">
                      <span class="blob-small home__portrait-blob" aria-hidden="true"></span>
-                     <img src="assets/img/home-img.png" alt="Seyam, robotics developer from Bangladesh">
+                     <picture>
+                        <source srcset="assets/img/home-img.webp" type="image/webp">
+                        <img src="assets/img/home-img.png" alt="Futuristic robot illustration for Seyam's robotics portfolio" width="1000" height="1000" fetchpriority="high">
+                     </picture>
                      <a class="home__scroll" href="#about" aria-label="Scroll to about me"><i class="ri-arrow-down-line" aria-hidden="true"></i></a>
                   </div>
                   <a class="home__circle" href="#about" aria-label="Explore more about Seyam"><span>EXPLORE · BUILD · CREATE ·</span><i class="ri-arrow-down-line" aria-hidden="true"></i></a>
@@ -118,23 +147,23 @@
             <div class="work__container container">
                <div class="work__track" id="work-track">
                   <article class="work__card">
-                     <div class="work__image work__image--skill"><img src="assets/img/3D.png" alt="3D model designed in Fusion 360"></div>
+                     <div class="work__image work__image--skill"><img src="assets/img/3D.png" alt="3D model designed in Fusion 360" width="576" height="347" loading="lazy" decoding="async"></div>
                      <div class="work__details"><span class="work__number">01</span><h3 class="work__name">3D Designing</h3><p class="work__description">Turning ideas into detailed 3D models and designs ready to take shape.</p></div>
                   </article>
                   <article class="work__card">
-                     <div class="work__image work__image--skill"><img src="assets/img/simulator.png" alt="Robot arm in simulation software"></div>
+                     <div class="work__image work__image--skill"><img src="assets/img/simulator.png" alt="Robot arm in simulation software" width="530" height="377" loading="lazy" decoding="async"></div>
                      <div class="work__details"><span class="work__number">02</span><h3 class="work__name">Simulation</h3><p class="work__description">Exploring designs and testing ideas in a virtual environment before building.</p></div>
                   </article>
                   <article class="work__card">
-                     <div class="work__image work__image--skill"><img src="assets/img/editing.png" alt="Video editing timeline on a laptop"></div>
+                     <div class="work__image work__image--skill"><img src="assets/img/editing.png" alt="Video editing timeline on a laptop" width="678" height="452" loading="lazy" decoding="async"></div>
                      <div class="work__details"><span class="work__number">03</span><h3 class="work__name">Editing</h3><p class="work__description">Creating clear, engaging video edits with CapCut and Alight Motion.</p></div>
                   </article>
                   <article class="work__card">
-                     <div class="work__image work__image--skill"><img src="assets/img/programming.png" alt="Code editor on a computer screen"></div>
+                     <div class="work__image work__image--skill"><img src="assets/img/programming.png" alt="Code editor on a computer screen" width="264" height="191" loading="lazy" decoding="async"></div>
                      <div class="work__details"><span class="work__number">04</span><h3 class="work__name">Programming</h3><p class="work__description">Writing code for creative projects, interactive experiences, and robotics.</p></div>
                   </article>
                   <article class="work__card">
-                     <div class="work__image work__image--skill"><img src="assets/img/social-media-marketting.png" alt="Digital marketing and social media work"></div>
+                     <div class="work__image work__image--skill"><img src="assets/img/social-media-marketting.png" alt="Digital marketing and social media work" width="525" height="350" loading="lazy" decoding="async"></div>
                      <div class="work__details"><span class="work__number">05</span><h3 class="work__name">Social Media Marketing</h3><p class="work__description">Making and sharing digital content to help ideas reach the right people.</p></div>
                   </article>
                </div>
@@ -153,24 +182,24 @@
                   <article class="skills__card">
                      <h3 class="skills__title">My Tools</h3>
                      <div class="skills__logos" role="region" aria-label="My tools; scroll horizontally" tabindex="0">
-                        <img src="assets/img/tool-logos/visualstudiocode.svg" alt="Visual Studio Code">
-                        <img src="assets/img/tool-logos/antigravity.png" alt="Google Antigravity IDE">
-                        <img src="assets/img/tool-logos/githubcopilot.svg" alt="GitHub Copilot">
-                        <img src="assets/img/tool-logos/github-mark.svg" alt="GitHub">
-                        <img src="assets/img/tool-logos/python.svg" alt="Python">
-                        <img src="assets/img/tool-logos/html5.svg" alt="HTML">
-                        <img src="assets/img/tool-logos/css3.svg" alt="CSS">
-                        <img src="assets/img/tool-logos/cplusplus.svg" alt="C++">
-                        <img src="assets/img/tool-logos/godotengine.svg" alt="Godot">
-                        <img src="assets/img/tool-logos/arduino.svg" alt="Arduino IDE">
-                        <img src="assets/img/tool-logos/kicad.svg" alt="KiCad">
-                        <img src="assets/img/tool-logos/wokwi.png" alt="Wokwi">
-                        <img src="assets/img/tool-logos/raspberrypi.svg" alt="Raspberry Pi">
-                        <img src="assets/img/tool-logos/bambulab.svg" alt="Bambu Lab">
-                        <img src="assets/img/tool-logos/fusion.svg" alt="Fusion 360">
-                        <img src="assets/img/tool-logos/blender.svg" alt="Blender">
-                        <img src="assets/img/tool-logos/capcut.png" alt="CapCut">
-                        <img src="assets/img/tool-logos/canva.svg" alt="Canva">
+                        <img src="assets/img/tool-logos/visualstudiocode.svg" alt="Visual Studio Code" width="42" height="42" loading="lazy" decoding="async">
+                        <img src="assets/img/tool-logos/antigravity.png" alt="Google Antigravity IDE" width="42" height="42" loading="lazy" decoding="async">
+                        <img src="assets/img/tool-logos/githubcopilot.svg" alt="GitHub Copilot" width="42" height="42" loading="lazy" decoding="async">
+                        <img src="assets/img/tool-logos/github-mark.svg" alt="GitHub" width="42" height="42" loading="lazy" decoding="async">
+                        <img src="assets/img/tool-logos/python.svg" alt="Python" width="42" height="42" loading="lazy" decoding="async">
+                        <img src="assets/img/tool-logos/html5.svg" alt="HTML" width="42" height="42" loading="lazy" decoding="async">
+                        <img src="assets/img/tool-logos/css3.svg" alt="CSS" width="42" height="42" loading="lazy" decoding="async">
+                        <img src="assets/img/tool-logos/cplusplus.svg" alt="C++" width="42" height="42" loading="lazy" decoding="async">
+                        <img src="assets/img/tool-logos/godotengine.svg" alt="Godot" width="42" height="42" loading="lazy" decoding="async">
+                        <img src="assets/img/tool-logos/arduino.svg" alt="Arduino IDE" width="42" height="42" loading="lazy" decoding="async">
+                        <img src="assets/img/tool-logos/kicad.svg" alt="KiCad" width="42" height="42" loading="lazy" decoding="async">
+                        <img src="assets/img/tool-logos/wokwi.png" alt="Wokwi" width="42" height="42" loading="lazy" decoding="async">
+                        <img src="assets/img/tool-logos/raspberrypi.svg" alt="Raspberry Pi" width="42" height="42" loading="lazy" decoding="async">
+                        <img src="assets/img/tool-logos/bambulab.svg" alt="Bambu Lab" width="42" height="42" loading="lazy" decoding="async">
+                        <img src="assets/img/tool-logos/fusion.svg" alt="Fusion 360" width="42" height="42" loading="lazy" decoding="async">
+                        <img src="assets/img/tool-logos/blender.svg" alt="Blender" width="42" height="42" loading="lazy" decoding="async">
+                        <img src="assets/img/tool-logos/capcut.png" alt="CapCut" width="42" height="42" loading="lazy" decoding="async">
+                        <img src="assets/img/tool-logos/canva.svg" alt="Canva" width="42" height="42" loading="lazy" decoding="async">
                      </div>
                   </article>
                </div>
