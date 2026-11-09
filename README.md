@@ -13,5 +13,7 @@ Scroll animations.
 Compatible with all modern browsers and devices.
 
 
+Portfolio by [Tanzil Alam Seyam](https://seyam.me/).
+
 Live-Preview : https://seyam.me/
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e8cb6cf7-3029-47d8-a917-742353825f7c" />
