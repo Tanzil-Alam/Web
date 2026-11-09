@@ -76,11 +76,6 @@ h1, h2, h3, h4 { color: var(--white-color); font-family: var(--second-font); fon
 .home__portrait-blob { top: 20%; left: 10%; z-index: -1; width: 180px; height: 180px; filter: blur(75px); }
 .home__scroll { position: absolute; right: -1.15rem; bottom: -.45rem; display: grid; width: 2.4rem; height: 2.4rem; place-items: center; border: 3px solid var(--body-color); border-radius: 50%; background: var(--first-color); color: var(--black-color); font-size: 1.3rem; transition: transform .3s; }
 .home__scroll:hover { transform: translateY(4px); }
-.home__circle { position: absolute; top: 60%; right: 5%; display: grid; width: 6rem; height: 6rem; place-items: center; border: 1px solid var(--border-color); border-radius: 50%; color: var(--first-color); }
-.home__circle span { position: absolute; inset: 0; display: grid; place-items: center; font-size: .48rem; letter-spacing: .12em; animation: circle 14s linear infinite; }
-.home__circle i { font-size: 1.3rem; }
-@keyframes circle { to { transform: rotate(360deg); } }
-
 /* About */
 .about { padding-block: 1.5rem 4rem; }
 .about__container { grid-template-columns: 1.2fr .8fr; align-items: center; gap: 10%; }
@@ -197,7 +192,6 @@ h1, h2, h3, h4 { color: var(--white-color); font-family: var(--second-font); fon
   .nav__contact { margin-top: .4rem; }
   .nav__close { position: absolute; top: 1.25rem; right: 1.25rem; display: block; }
   .home { min-height: 650px; }
-  .home__circle { right: 0; }
   .about__container { gap: 7%; }
   .work__track { grid-auto-columns: calc((100% - 1rem) / 2); }
   .testimonials__track { grid-auto-columns: calc((100% - 1rem) / 2); }
@@ -209,7 +203,6 @@ h1, h2, h3, h4 { color: var(--white-color); font-family: var(--second-font); fon
   .home { min-height: 590px; padding-top: calc(var(--header-height) + 2.5rem); }
   .home__subtitle span { display: block; margin-top: .2rem; }
   .home__title { font-size: clamp(2.4rem, 11vw, 3.3rem); }
-  .home__circle { top: auto; right: 4%; bottom: -1.5rem; width: 5rem; height: 5rem; }
   .about { padding-top: .75rem; padding-bottom: 2.5rem; }
   .about__container, .contact__container { grid-template-columns: 1fr; gap: 1.5rem; }
   .about__title { font-size: 1.45rem; }
