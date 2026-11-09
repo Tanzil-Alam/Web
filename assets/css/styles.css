@@ -64,7 +64,7 @@ h1, h2, h3, h4 { color: var(--white-color); font-family: var(--second-font); fon
 .home__blob { top: 5rem; left: -9rem; }
 .home__container { position: relative; }
 .home__content { position: relative; max-width: 760px; margin-inline: auto; text-align: center; }
-.home__subtitle { margin-bottom: 1.15rem; color: var(--white-color); font-size: var(--small-font-size); }
+.home__subtitle { margin-bottom: 1.15rem; color: var(--white-color); font-size: var(--small-font-size); line-height: 1.6; }
 .home__subtitle span { color: var(--text-color); }
 .home__title { font-size: var(--biggest-font-size); font-weight: 600; line-height: 1.13; }
 .home__title span { color: var(--first-color); }
@@ -207,6 +207,7 @@ h1, h2, h3, h4 { color: var(--white-color); font-family: var(--second-font); fon
   .section { padding-block: 3.5rem .75rem; }
   .section__title { margin-bottom: 1.35rem; }
   .home { min-height: 590px; padding-top: calc(var(--header-height) + 2.5rem); }
+  .home__subtitle span { display: block; margin-top: .2rem; }
   .home__title { font-size: clamp(2.4rem, 11vw, 3.3rem); }
   .home__circle { top: auto; right: 4%; bottom: -1.5rem; width: 5rem; height: 5rem; }
   .about { padding-top: .75rem; padding-bottom: 2.5rem; }
